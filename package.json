@@ -1,0 +1,28 @@
+{
+  "name": "combustion",
+  "version": "1.0.0",
+  "description": "A Cydia Impactor Alternative",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/electron/electron-quick-start",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "GitHub",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^9.2.0"
+  },
+  "dependencies": {
+    "node-forge": "^0.9.1",
+    "ocsp": "^1.2.0",
+    "openssl-nodejs": "^1.0.5",
+    "pem": "^1.14.4"
+  }
+}

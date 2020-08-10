@@ -1,0 +1,41 @@
+/* Custom color theme properties */
+:root {
+  --f7-theme-color: #ffa881;
+  --f7-theme-color-rgb: 255, 168, 129;
+  --f7-theme-color-shade: #ff8c58;
+  --f7-theme-color-tint: #ffc4aa;
+}
+
+/* Your app custom styles here */
+
+.navbar {
+  -webkit-app-region: drag
+}
+
+body {
+  background-image: url(../assets/images/background.jpg?v1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.page {
+  background-color: rgba(64, 64, 64, 0.31);
+  backdrop-filter: blur(20px);
+}
+
+.block-strong {
+  background-color: #1c1c1d66;
+}
+
+.list ul {
+  background: #1c1c1d66;
+}
+
+.navbar-bg {
+  background: #1c1c1d66;
+}
+
+.card {
+  background: #1c1c1d66;
+}

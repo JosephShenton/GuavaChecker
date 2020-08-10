@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Combustion</title>
+    <link rel="stylesheet" href="bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <style type="text/css">
+      * {
+        font-family: -apple-system, SF Pro Text, SF UI Text, system-ui, Helvetica Neue, Helvetica, Arial, sans-serif;
+      }
+      .titlebar {
+        -webkit-user-select: none;
+        -webkit-app-region: drag;
+      }
+
+      .titlebar-button {
+        -webkit-app-region: no-drag;
+      }
+
+      .gradientCard {
+        height: 77px;
+        max-height: 77px;
+        line-height: 77px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 30px;
+        border-radius: 5px;
+        background: linear-gradient(167.47deg, #FD7C7C 0%, #FF6E6E 95.89%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gradientCard device"></div>
+    <script>
+      // You can also require other files to run in this process
+      require('./renderer.js')
+      var windowTopBar = document.createElement('div')
+      windowTopBar.style.width = "100%"
+      windowTopBar.style.height = "38px"
+      windowTopBar.style.backgroundColor = "#FFF"
+      windowTopBar.style.position = "absolute"
+      windowTopBar.style.zIndex = "1"
+      // windowTopBar.style.marginTop = "-1px"
+      windowTopBar.style.top = windowTopBar.style.left = 0
+      windowTopBar.style.webkitAppRegion = "drag"
+      windowTopBar.id = "titleBar"
+      document.body.appendChild(windowTopBar)
+      var title = document.createElement("p")
+      title.style.width = "100%"
+      title.style.height = "38px"
+      title.style.color = "#B0B0B0"
+      title.style.fontSize = "14.2px"
+      title.innerText = "Combustion"
+      title.style.textAlign = "center"
+      title.style.verticalAlign = "middle"
+      // title.style.lineHeight = "38px"
+      title.style.marginTop = "9px"
+      document.getElementById("titleBar").appendChild(title)
+      document.body.style.paddingTop = "15px"
+      document.body.style.zIndex = "0"
+
+    </script>
+  </body>
+</html>
